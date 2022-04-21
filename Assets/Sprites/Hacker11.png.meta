@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 4c97202a996785c43ad14df23137cc9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3069182708848275904
+    second: Hacker11_0
+  - first:
+      213: 3176763167475421181
+    second: Hacker11_1
+  - first:
+      213: 5766159288303010269
+    second: Hacker11_2
+  - first:
+      213: 7056100672631773703
+    second: Hacker11_3
+  - first:
+      213: 8401944258502970228
+    second: Hacker11_4
+  - first:
+      213: -5764675760220113720
+    second: Hacker11_5
+  - first:
+      213: 9194806082163614209
+    second: Hacker11_6
+  - first:
+      213: 728091917271263526
+    second: Hacker11_7
+  - first:
+      213: 1261490638667262475
+    second: Hacker11_8
+  - first:
+      213: -2210884876392911902
+    second: Hacker11_9
+  - first:
+      213: 8497955941076144870
+    second: Hacker11_10
+  - first:
+      213: -1553342104693776607
+    second: Hacker11_11
+  - first:
+      213: 262684049048352329
+    second: Hacker11_12
+  - first:
+      213: -9195949213683230327
+    second: Hacker11_13
+  - first:
+      213: -1427677943447306287
+    second: Hacker11_14
+  - first:
+      213: -8132384849139323302
+    second: Hacker11_15
+  - first:
+      213: 2563625361281526661
+    second: Hacker11_16
+  - first:
+      213: 1617320375089184269
+    second: Hacker11_17
+  - first:
+      213: -4458339713789789947
+    second: Hacker11_18
+  - first:
+      213: -8253004499374972546
+    second: Hacker11_19
+  - first:
+      213: -429159606046590011
+    second: Hacker11_20
+  - first:
+      213: -3126139970363132568
+    second: Hacker11_21
+  - first:
+      213: 6485506813486853985
+    second: Hacker11_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 22
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hacker11_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 177
+        width: 29
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5343661, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ec35866921865d0800000000000000
+      internalID: -3069182708848275904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 177
+        width: 29
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5319048, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffcae40541261c20800000000000000
+      internalID: 3176763167475421181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 177
+        width: 29
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5330821, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1ce918253850050800000000000000
+      internalID: 5766159288303010269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 196
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a9c9b4d2e4ce160800000000000000
+      internalID: 7056100672631773703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 195
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bc3b6a9c3b99470800000000000000
+      internalID: 8401944258502970228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_5
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 197
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c476ca40f1cfffa0800000000000000
+      internalID: -5764675760220113720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 109
+        width: 29
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5345573, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102a6f16a638a9f70800000000000000
+      internalID: 9194806082163614209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_7
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 109
+        width: 29
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5302548, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62969ccbdb3ba1a00800000000000000
+      internalID: 728091917271263526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 109
+        width: 29
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5333115, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a2e3d5d07b18110800000000000000
+      internalID: 1261490638667262475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 109
+        width: 29
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5329058, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb215f2beb5151e0800000000000000
+      internalID: -2210884876392911902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_10
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 109
+        width: 29
+        height: 64
+      alignment: 9
+      pivot: {x: 0.53249913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e293c087edcee570800000000000000
+      internalID: 8497955941076144870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_11
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 109
+        width: 29
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5335094, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fd113f59b617ae0800000000000000
+      internalID: -1553342104693776607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 63
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94630b730cd35a300800000000000000
+      internalID: 262684049048352329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 66
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989d0e199ec616080800000000000000
+      internalID: -9195949213683230327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 62
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfb92f797edf2ce0800000000000000
+      internalID: -1427677943447306287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 63
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e28422117f32f80800000000000000
+      internalID: -8132384849139323302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_16
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 66
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b2e54fea3d39320800000000000000
+      internalID: 2563625361281526661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_17
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 62
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e313def40e17610800000000000000
+      internalID: 1617320375089184269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 7
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509fa8fc6abc022c0800000000000000
+      internalID: -4458339713789789947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 9
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71ed055220777d80800000000000000
+      internalID: -8253004499374972546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_20
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 15
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb75a1bc915b0af0800000000000000
+      internalID: -429159606046590011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_21
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865fa5c8248bd94d0800000000000000
+      internalID: -3126139970363132568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hacker11_22
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 20
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f624ec516210a50800000000000000
+      internalID: 6485506813486853985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
