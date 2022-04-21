@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerHealth : MonoBehaviour
+{
+    public int maxHealthValue;
+    public int currentHealthValue;
+    public float invincibleTime;
+    private float invincibleTimeCounter;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentHealthValue = maxHealthValue;
+        UIController.UICanvas.healthBar.maxValue = maxHealthValue;
+        UIController.UICanvas.healthBar.value = currentHealthValue;
+        UIController.UICanvas.healthBarText.text = currentHealthValue.ToString();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(invincibleTimeCounter > 0)
+        {
+            invincibleTimeCounter -= Time.deltaTime;
+            if (invincibleTime <= 0)
+            {
+                PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r,
+                    PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 0.5f);
+                PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r, 
+                    PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 0.5f);
+            }
+        }
+    }
+
+    public void DamagePlayer(int damageValue)
+    {
+        if (invincibleTime <= 0)
+        {
+            currentHealthValue -= damageValue;
+            PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r, 
+                PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 0.5f);
+            PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r, 
+                PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 0.5f);
+            if (currentHealthValue <= 0)
+            {
+                PlayerController.player.gameObject.SetActive(false);
+                UIController.UICanvas.deathScreen.SetActive(true);
+            }
+            invincibleTimeCounter = invincibleTime;
+            UIController.UICanvas.healthBar.value = currentHealthValue;
+            UIController.UICanvas.healthBarText.text = currentHealthValue.ToString();
+        }
+    }
+}
