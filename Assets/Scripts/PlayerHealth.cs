@@ -9,7 +9,13 @@ public class PlayerHealth : MonoBehaviour
     public float invincibleTime;
     private float invincibleTimeCounter;
 
+    public static PlayerHealth player;
+
     // Start is called before the first frame update
+    private void Awake()
+    {
+        player = this;
+    }
     void Start()
     {
         currentHealthValue = maxHealthValue;
@@ -24,24 +30,24 @@ public class PlayerHealth : MonoBehaviour
         if(invincibleTimeCounter > 0)
         {
             invincibleTimeCounter -= Time.deltaTime;
-            if (invincibleTime <= 0)
+            if (invincibleTimeCounter <= 0)
             {
                 PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r,
-                    PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 0.5f);
+                    PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 1f);
                 PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r, 
-                    PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 0.5f);
+                    PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 1f);
             }
         }
     }
-
+    
     public void DamagePlayer(int damageValue)
     {
-        if (invincibleTime <= 0)
+        if (invincibleTimeCounter <= 0)
         {
             currentHealthValue -= damageValue;
-            PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r, 
+            PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r,
                 PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 0.5f);
-            PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r, 
+            PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r,
                 PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 0.5f);
             if (currentHealthValue <= 0)
             {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6979498069453622645}
   - component: {fileID: 6979498069453622644}
   - component: {fileID: 6979498069453622647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plazm Bullet Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ ParticleSystem:
   serializedVersion: 7
   lengthInSec: 0.5
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}

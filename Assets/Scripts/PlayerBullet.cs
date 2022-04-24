@@ -8,7 +8,7 @@ public class PlayerBullet : MonoBehaviour
     public Rigidbody2D rigidBody;
     private Vector3 direction;
     public GameObject explosion;
-
+    public int damageToGive = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +29,14 @@ public class PlayerBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D( Collider2D collision)
     {
         Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
+
+        if (collision.tag=="Enemy")
+        {
+            EnemyController.enemy.DamageEnemy(damageToGive);
+        }
     }
 }
