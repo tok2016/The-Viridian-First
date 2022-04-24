@@ -39,24 +39,24 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
-    
+
     public void DamagePlayer(int damageValue)
     {
         if (invincibleTimeCounter <= 0)
         {
-            currentHealthValue -= damageValue;
+        currentHealthValue -= damageValue;
             PlayerController.player.playerBody.color = new Color(PlayerController.player.playerBody.color.r,
                 PlayerController.player.playerBody.color.g, PlayerController.player.playerBody.color.b, 0.5f);
             PlayerController.player.shootArm.color = new Color(PlayerController.player.shootArm.color.r,
                 PlayerController.player.shootArm.color.g, PlayerController.player.shootArm.color.b, 0.5f);
             if (currentHealthValue <= 0)
-            {
-                PlayerController.player.gameObject.SetActive(false);
+        {
+            PlayerController.player.gameObject.SetActive(false);
                 UIController.UICanvas.deathScreen.SetActive(true);
-            }
-            invincibleTimeCounter = invincibleTime;
-            UIController.UICanvas.healthBar.value = currentHealthValue;
-            UIController.UICanvas.healthBarText.text = currentHealthValue.ToString();
         }
+            invincibleTimeCounter = invincibleTime;
+        UIController.UICanvas.healthBar.value = currentHealthValue;
+        UIController.UICanvas.healthBarText.text = currentHealthValue.ToString();
     }
+}
 }
