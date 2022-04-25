@@ -102,6 +102,7 @@ MonoBehaviour:
   rigidBody: {fileID: 3524122688840363873}
   explosion: {fileID: 2198473362888599434, guid: 28dd28a6948e4e44db9bd28a7bea2490, type: 3}
   damageToGive: 20
+  bulletEffect: {fileID: 6979498069453622646, guid: 6b70ea7f1778c7642a4bbda08214832d, type: 3}
 --- !u!58 &4893863337218723355
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -193,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 6979498069453622646, guid: 6b70ea7f1778c7642a4bbda08214832d, type: 3}
       propertyPath: m_Name
       value: Plazm Bullet Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6979498069453622646, guid: 6b70ea7f1778c7642a4bbda08214832d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b70ea7f1778c7642a4bbda08214832d, type: 3}

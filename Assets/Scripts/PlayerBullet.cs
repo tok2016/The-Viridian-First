@@ -9,6 +9,7 @@ public class PlayerBullet : MonoBehaviour
     private Vector3 direction;
     public GameObject explosion;
     public int damageToGive = 20;
+    public GameObject bulletEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,7 @@ public class PlayerBullet : MonoBehaviour
         Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
 
-        if (collision.tag=="Enemy")
+        if (collision.tag == "Enemy")
         {
             EnemyController.enemy.DamageEnemy(damageToGive);
         }
