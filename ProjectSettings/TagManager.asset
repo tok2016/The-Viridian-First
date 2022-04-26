@@ -38,11 +38,12 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 309016355
     locked: 0
   - name: Enemies
     uniqueID: 1411351487
