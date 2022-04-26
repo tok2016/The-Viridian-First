@@ -16,7 +16,7 @@ TagManager:
   - Enemies
   - Player Bullets
   - Enemy Bullets
-  - 
+  - IgnoreBullets
   - 
   - 
   - 
@@ -43,7 +43,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Ground
-    uniqueID: 309016355
+    uniqueID: 3168810703
     locked: 0
   - name: Enemies
     uniqueID: 1411351487
