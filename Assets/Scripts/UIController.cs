@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public Slider healthBar;
     public Text healthBarText;
     public GameObject deathScreen;
+    public Text coinBarText;
 
     private void Awake()
     {

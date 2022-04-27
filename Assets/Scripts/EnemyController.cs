@@ -20,15 +20,12 @@ public class EnemyController : MonoBehaviour
     public float fireRate;
     private float fireCounter;
 
-    public GameObject hitEffect;
-
     public float shootRange;
 
 
     public SpriteRenderer EnemyBody;
 
     public SpriteRenderer enemyArm; //test
-    private bool isMoving; //test
     private float angle; //test
     public SpriteRenderer armDiagonalDown;
     public SpriteRenderer armDown;
@@ -89,12 +86,10 @@ public class EnemyController : MonoBehaviour
         if (moveDirection!=Vector3.zero)
         {
             anim.SetBool("isMoving", true);
-            isMoving = true; //test
         }
         else
         {
             anim.SetBool("isMoving", false);
-            isMoving = false; //test
         }
 
         Vector2 DistanceFromPlayerToEnemy = new Vector2(PlayerController.player.transform.position.x - transform.position.x, PlayerController.player.transform.position.y - transform.position.y);
@@ -142,8 +137,6 @@ public class EnemyController : MonoBehaviour
 
     public void DamageEnemy(int damage)
     {
-        Instantiate(hitEffect, transform.position, transform.rotation);
-
         health -= damage;
         
         if (health<=0)

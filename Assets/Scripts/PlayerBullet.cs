@@ -37,7 +37,7 @@ public class PlayerBullet : MonoBehaviour
 
         if (collision.tag == "Enemy")
         {
-            EnemyController.enemy.DamageEnemy(damageToGive);
+            collision.GetComponent<EnemyController>().DamageEnemy(damageToGive);
         }
     }
 }
