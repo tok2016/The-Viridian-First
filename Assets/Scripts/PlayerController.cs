@@ -36,66 +36,69 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-        moveInput.Normalize();
-        rigidBody.velocity = moveInput * moveSpeed;
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 screenPoint = theCamera.WorldToScreenPoint(transform.localPosition);
-        if(mousePos.x < screenPoint.x)
+        if (!UIController.UICanvas.passwordScreen.activeInHierarchy) 
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        arm.enabled = false;
-        shootArm.enabled = true;
-        Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
-        angle = Mathf.Atan2(offset.x, offset.y) * Mathf.Rad2Deg;
-        if (moveInput != Vector2.zero)
-        {
-            anim.SetBool("isRunning", true);
-            isRunning = true;
-        }
-        else
-        {
-            anim.SetBool("isRunning", false);
-            isRunning = false;
-        }
-        anim.SetBool("isShooting", true);
+            moveInput.x = Input.GetAxisRaw("Horizontal");
+            moveInput.y = Input.GetAxisRaw("Vertical");
+            moveInput.Normalize();
+            rigidBody.velocity = moveInput * moveSpeed;
+            Vector3 mousePos = Input.mousePosition;
+            Vector3 screenPoint = theCamera.WorldToScreenPoint(transform.localPosition);
+            if (mousePos.x < screenPoint.x)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+            arm.enabled = false;
+            shootArm.enabled = true;
+            Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
+            angle = Mathf.Atan2(offset.x, offset.y) * Mathf.Rad2Deg;
+            if (moveInput != Vector2.zero)
+            {
+                anim.SetBool("isRunning", true);
+                isRunning = true;
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+                isRunning = false;
+            }
+            anim.SetBool("isShooting", true);
 
-        if (angle < 22.5f && angle >= 0f || angle <= 0f && angle > -22.5f)
-            ArmRotation(3, new Vector3(-0.079f, 0.474f, 0f), new Vector3(-0.0806f, 0.5291f, 0f),
-                new Vector3(-0.133f, 0.804f, 0f), Quaternion.Euler(0f, 0f, 90f));
-        else if (angle < 67.5f && angle >= 22.5f || angle <= -22.5f && angle > -67.5f)
-            ArmRotation(1, new Vector3(0.209f, 0.058f, 0f), new Vector3(0.262f, 0.214f, 0f),
-                new Vector3(0.517f, 0.598f, 0f), Quaternion.Euler(0f, 0f, 45f));
-        else if (angle < 112.5f && angle >= 67.5f || angle <= -67.5f && angle > -112.5f)
-            ArmRotation(0, new Vector3(0.2089f, -0.049f, 0f), new Vector3(0.2085f, 0.0027f, 0f),
-                new Vector3(0.784f, -0.015f, 0f), Quaternion.Euler(0f, 0f, 0f));
-        else if (angle < 157.5f && angle >= 112.5f || angle <= -112.5f && angle > -157.5f)
-            ArmRotation(2, new Vector3(0.1036f, -0.208f, 0f), new Vector3(0.1037f, -0.1023f, 0f),
-                new Vector3(0.68f, -0.446f, 0f), Quaternion.Euler(0f, 0f, -45f));
-        else if (angle <= 180f && angle >= 157.5f || angle <= -157.5f && angle >= -180f)
-            ArmRotation(4, new Vector3(-0.0803f, -0.3126f, 0f), new Vector3(-0.0803f, -0.2076f, 0f), 
-                new Vector3(0.299f, -0.819f, 0f), Quaternion.Euler(0f, 0f, -90f));
+            if (angle < 22.5f && angle >= 0f || angle <= 0f && angle > -22.5f)
+                ArmRotation(3, new Vector3(-0.079f, 0.474f, 0f), new Vector3(-0.0806f, 0.5291f, 0f),
+                    new Vector3(-0.133f, 0.804f, 0f), Quaternion.Euler(0f, 0f, 90f));
+            else if (angle < 67.5f && angle >= 22.5f || angle <= -22.5f && angle > -67.5f)
+                ArmRotation(1, new Vector3(0.209f, 0.058f, 0f), new Vector3(0.262f, 0.214f, 0f),
+                    new Vector3(0.517f, 0.598f, 0f), Quaternion.Euler(0f, 0f, 45f));
+            else if (angle < 112.5f && angle >= 67.5f || angle <= -67.5f && angle > -112.5f)
+                ArmRotation(0, new Vector3(0.2089f, -0.049f, 0f), new Vector3(0.2085f, 0.0027f, 0f),
+                    new Vector3(0.784f, -0.015f, 0f), Quaternion.Euler(0f, 0f, 0f));
+            else if (angle < 157.5f && angle >= 112.5f || angle <= -112.5f && angle > -157.5f)
+                ArmRotation(2, new Vector3(0.1036f, -0.208f, 0f), new Vector3(0.1037f, -0.1023f, 0f),
+                    new Vector3(0.68f, -0.446f, 0f), Quaternion.Euler(0f, 0f, -45f));
+            else if (angle <= 180f && angle >= 157.5f || angle <= -157.5f && angle >= -180f)
+                ArmRotation(4, new Vector3(-0.0803f, -0.3126f, 0f), new Vector3(-0.0803f, -0.2076f, 0f),
+                    new Vector3(0.299f, -0.819f, 0f), Quaternion.Euler(0f, 0f, -90f));
 
-        if(Input.GetMouseButtonDown(0))
-        {
-            Instantiate(bullet, firePoint.position, firePoint.rotation);
-            shotCounter = timeBetweenShots;
-        }
-        if(Input.GetMouseButton(0))
-        {
-            shotCounter -= Time.deltaTime;
-            if(shotCounter <= 0)
+            if (Input.GetMouseButtonDown(0))
             {
                 Instantiate(bullet, firePoint.position, firePoint.rotation);
                 shotCounter = timeBetweenShots;
             }
-        }
+            if (Input.GetMouseButton(0))
+            {
+                shotCounter -= Time.deltaTime;
+                if (shotCounter <= 0)
+                {
+                    Instantiate(bullet, firePoint.position, firePoint.rotation);
+                    shotCounter = timeBetweenShots;
+                }
+            }
+        }        
     }
 
     private void ArmRotation(int spriteNumber, Vector3 idlePos, Vector3 runningPos, Vector3 gunPos, Quaternion angle)

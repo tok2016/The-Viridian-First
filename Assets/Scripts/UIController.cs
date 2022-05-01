@@ -11,6 +11,10 @@ public class UIController : MonoBehaviour
     public GameObject deathScreen;
     public Text coinBarText;
 
+    public GameObject passwordScreen;
+    public Text inputText;
+    public GameObject badPasswordAlerte;
+
     private void Awake()
     {
         UICanvas = this;
@@ -25,6 +29,21 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (passwordScreen.activeInHierarchy)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Computer.computer.ChangePassword(inputText.text);
+                passwordScreen.SetActive(false);
+                Time.timeScale = 1f;
+            }
+
+            if (inputText.text.Length != 0 
+                && Computer.computer.PasswordQualityToHealAmount(inputText.text) < Computer.computer.healByGoodPassword)
+                badPasswordAlerte.SetActive(true);
+            else
+                badPasswordAlerte.SetActive(false);
+        }
     }
 }
