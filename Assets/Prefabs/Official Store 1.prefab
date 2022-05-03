@@ -560,6 +560,8 @@ MonoBehaviour:
   itemCoast: 10
   itemName: Sword
   itemType: 0
+  potentialWeapon: {fileID: 8169552354355011972, guid: 56e6d99d9fdb9fe42bd780ae5733df71, type: 3}
+  canBuy: 1
 --- !u!1 &3393534306863498337
 GameObject:
   m_ObjectHideFlags: 0

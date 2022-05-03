@@ -9,6 +9,9 @@ public class LevelManager : MonoBehaviour
     public int currentCoinsAmount;
     public string sceneToLoad;
 
+    public List<EnemyController> enemies;
+    public GameObject door;
+
     private void Awake()
     {
         lvlManager = this;
@@ -25,6 +28,8 @@ public class LevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             SceneManager.LoadScene(sceneToLoad);
+        if (enemies.Count <= 0)
+            door.SetActive(false);
     }
 
     public void GetCoins(int amount)

@@ -26,6 +26,9 @@ public class ItemPlace : MonoBehaviour
     private bool isShopOfficial;
     private bool inBuyZone;
 
+    public GunController potentialWeapon;
+    public bool canBuy;
+
     void Start()
     {
         isShopOfficial = this.GetComponentInParent<Shop>().isShopOfficial;
@@ -59,7 +62,25 @@ public class ItemPlace : MonoBehaviour
                 switch (itemType)
                 {
                     case ItemType.Weapon:
-                        //добавить оружие в коллекцию
+                        if (canBuy)
+                        {
+                            if (potentialWeapon.tag != "PlayerSword")
+                            {
+                                GunController newWeapon = Instantiate(potentialWeapon);
+                                newWeapon.transform.parent = PlayerController.player.shootArm.transform;
+                                newWeapon.transform.localPosition = new Vector3(0.443f, -0.549f, 0f);
+                                newWeapon.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                                newWeapon.transform.localScale = Vector3.one;
+                                PlayerController.player.weapons.Add(newWeapon);
+                                PlayerController.player.currentWeapon = PlayerController.player.weapons.Count - 1;
+                            }
+                            else
+                            {
+                                PlayerController.player.isSwordAvailable = true;
+                                PlayerController.player.currentWeapon++;
+                            }
+                            PlayerController.player.SwithTheWeapon();
+                        }
                         break;
                     case ItemType.HealthUpgrade:
                         //повысить количесиво макс.хп

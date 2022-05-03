@@ -63,11 +63,13 @@ public class EnemyController : MonoBehaviour
 
             if (shouldShoot == true && Vector3.Distance(transform.position, PlayerController.player.transform.position) < shootRange)
             {
+                
                 fireCounter -= Time.deltaTime;
                 if (fireCounter <= 0)
                 {
                     fireCounter = fireRate;
                     Instantiate(bullet, firePoint.position, firePoint.rotation);
+                    Audio.instance.PlayEffects(1);
                 }
             }
         }
@@ -142,6 +144,7 @@ public class EnemyController : MonoBehaviour
         if (health<=0)
         {
             Destroy(gameObject);
+            LevelManager.lvlManager.enemies.Remove(gameObject.GetComponent<EnemyController>());
         }
     }
 }

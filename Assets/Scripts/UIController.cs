@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     public Text healthBarText;
     public GameObject deathScreen;
     public Text coinBarText;
+    public GameObject victoryScreen;
 
     public GameObject passwordScreen;
     public Text inputText;
