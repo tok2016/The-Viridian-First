@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -712,6 +713,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Floor Tiles_1: 1477263738922588336
+      Floor Tiles_11: 7310715492859518088
+      Floor Tiles_13: 421164037356366213
+      Floor Tiles_15: 7076284842627915133
+      Floor Tiles_20: 651392883792249940
+      Floor Tiles_16: 1865894947553418430
+      Floor Tiles_22: -2245628315856059145
+      Floor Tiles_21: -8281674042366240455
+      Floor Tiles_7: 4587592531597266273
+      Floor Tiles_19: 6544167750977226656
+      Floor Tiles_23: 6850931791264264719
+      Floor Tiles_3: 7132384318452189110
+      Floor Tiles_4: -5312701022873286896
+      Floor Tiles_10: -3322933356266018626
+      Floor Tiles_18: -6234291193376544469
+      Floor Tiles_2: -4615120800444654537
+      Floor Tiles_9: -5079630010116515287
+      Floor Tiles_5: 3007585523380539474
+      Floor Tiles_8: 4944636990140126816
+      Floor Tiles_12: 670743822327861669
+      Floor Tiles_17: 3678346450286961235
+      Floor Tiles_0: -1433768925229854497
+      Floor Tiles_6: -7515928504677417962
+      Floor Tiles_14: -289998009256544219
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

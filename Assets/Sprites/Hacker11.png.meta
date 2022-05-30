@@ -93,6 +93,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -688,6 +689,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Hacker11_22: 6485506813486853985
+      Hacker11_10: 8497955941076144870
+      Hacker11_13: -9195949213683230327
+      Hacker11_12: 262684049048352329
+      Hacker11_17: 1617320375089184269
+      Hacker11_14: -1427677943447306287
+      Hacker11_3: 7056100672631773703
+      Hacker11_15: -8132384849139323302
+      Hacker11_6: 9194806082163614209
+      Hacker11_9: -2210884876392911902
+      Hacker11_5: -5764675760220113720
+      Hacker11_19: -8253004499374972546
+      Hacker11_8: 1261490638667262475
+      Hacker11_1: 3176763167475421181
+      Hacker11_2: 5766159288303010269
+      Hacker11_18: -4458339713789789947
+      Hacker11_0: -3069182708848275904
+      Hacker11_11: -1553342104693776607
+      Hacker11_21: -3126139970363132568
+      Hacker11_4: 8401944258502970228
+      Hacker11_16: 2563625361281526661
+      Hacker11_20: -429159606046590011
+      Hacker11_7: 728091917271263526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
